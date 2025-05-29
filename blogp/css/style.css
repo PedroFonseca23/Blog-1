@@ -1,0 +1,186 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Fundo neutro */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #222; /* Títulos mais escuros */
+    font-weight: normal;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #007BFF; /* Cor de destaque no hover */
+}
+
+/* Estilo do post */
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombras dinâmicas ao passar o mouse */
+}
+
+.post h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.post h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post h2 a:hover {
+    color: #007BFF;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.post small {
+    display: block;
+    margin-top: 15px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Estilos para a página de um único post */
+.single-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-post h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.single-post p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.single-post small {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Formulários */
+form input, form textarea, form button {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form input[type="text"], form input[type="password"] {
+    max-width: 500px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    color: #777;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .post h2 {
+        font-size: 1.5rem;
+    }
+
+    form input, form textarea, form button {
+        max-width: 100%;
+    }
+}
+html{
+    scroll-behavior: smooth; /* Suaviza o scroll */
+}
